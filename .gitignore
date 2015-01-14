@@ -52,3 +52,11 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Robot
+log.html
+output.xml
+report.html
+
+# IDE
+.idea/
