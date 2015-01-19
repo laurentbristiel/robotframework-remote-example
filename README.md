@@ -8,8 +8,9 @@ Will fork later on if I can propose any interesting/relevant improvements/fixes.
 pip install robotframework
 pip install robotremoteserver
 
-2. launch remote server (locally)
-python examplelibrary.py
+2. launch 2 remote servers (locally)
+python examplelibrary.py 127.0.0.1 8270
+python examplelibrary.py 127.0.0.1 8271
 
 3. launch Robot tests
 pybot example_tests.robot
