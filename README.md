@@ -1,8 +1,7 @@
 # Robot Framework Remote Library Example
 
-Based on: https://github.com/robotframework/PythonRemoteServer/blob/master/example/README.rst.
-
-(Will fork later on if I can propose any interesting/relevant improvements/fixes)
+[Based on Python Remote Server Example](https://github.com/robotframework/PythonRemoteServer/blob/master/example/README.rst).
+I Will fork later on if I can propose any interesting/relevant improvements/fixes.
 
 Usage:
 
