@@ -17,4 +17,9 @@ Count Items in Directory on both machines
 
 Failing Example
     remote0.Strings Should Be Equal  Hello  Hello
-    remote0.Strings Should Be Equal  not    equal
+    
+Check Folder Size
+    ${size} =  remote1.Get Size Folder  /tmp
+    log to console  ${\n}size : ${size}
+    # let's check that we don't have more than 100Mo in our tmp folder
+    Should be true  ${size} < 100000000

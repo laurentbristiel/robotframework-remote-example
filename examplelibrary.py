@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import os
-
+from os.path import join, getsize, isfile, isdir, splitext
 
 class ExampleRemoteLibrary(object):
 
@@ -16,7 +16,16 @@ class ExampleRemoteLibrary(object):
         if str1 != str2:
             raise AssertionError("Given strings are not equal.")
 
-
+    def get_size_folder(self, path):
+        TotalSize = 0
+        for item in os.walk(path):
+            for file in item[2]:
+                try:
+                    TotalSize = TotalSize + getsize(join(item[0], file))
+                except:
+                    print("error with file:  " + join(item[0], file))
+        return TotalSize
+        
 if __name__ == '__main__':
     import sys
     from robotremoteserver import RobotRemoteServer
