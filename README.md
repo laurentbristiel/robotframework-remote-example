@@ -14,4 +14,4 @@ Usage:
     - python examplelibrary.py 127.0.0.1 8271
 
 3. launch Robot tests
-    - pybot example_tests.robot
+    - robot example_tests.robot
